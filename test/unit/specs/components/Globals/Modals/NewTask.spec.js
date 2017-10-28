@@ -9,7 +9,7 @@ import NewExtra from '@/components/Global/Modals/NewExtra'
 Vue.use(Vuex)
 Vue.use(Buefy)
 
-describe.only('NewTask.vue', () => {
+describe('NewTask.vue', () => {
   it('is a component', () => {
     const wrapper = shallow(NewTask)
     assert(wrapper.isVueComponent === true)

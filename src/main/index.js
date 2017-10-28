@@ -116,6 +116,9 @@ function createFullscreenNotifier() {
     backgroundColor: '#00000000',
     hasShadow: false,
     frame: false,
+    webPreferences: {
+      devTools: false,
+    },
     // titleBarStyle: 'hidden',
     resizable: false,
     alwaysOnTop: true,

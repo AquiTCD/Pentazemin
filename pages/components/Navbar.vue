@@ -3,13 +3,14 @@
     .navbar-menu
       .navbar-brand
         a.navbar-item(href="https://aquitcd.github.io/pentazemin/") Pentazemin
+      a.navbar-item Users Guide
       .navbar-end
         .navbar-item
           .field.is-grouped
             p.control
               a.bd-tw-button.button(data-social-network="github" data-social-action="Github" data-social-target="https://github.com/AquiTCD/pentazemin" target="_blank" href="https://github.com/AquiTCD/pentazemin")
                 span.icon
-                  i.fa.fa-twitter
+                  i.fa.fa-github
                 span Github
             p.control
               a.bd-tw-button.button(data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="")

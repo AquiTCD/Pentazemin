@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'pentazemin-introduction',
+    title: 'Pentazemin - Introduction',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -23,7 +23,7 @@ module.exports = {
   ** Plugins configuration
   */
   plugins: ['~/plugins/buefy'],
-  modules: ['@nuxtjs/bulma'],
+  modules: ['@nuxtjs/bulma', '@nuxtjs/font-awesome'],
   /*
   ** Build configuration
   */

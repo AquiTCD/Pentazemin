@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@nuxtjs/font-awesome@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/font-awesome/-/font-awesome-1.0.2.tgz#cf1740e04b36e94476ed5cba69aef14a773625a2"
+  dependencies:
+    font-awesome "^4.7.0"
+
 "@nuxtjs/youch@3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@nuxtjs/youch/-/youch-3.0.2.tgz#03fff829ca45bd1c3ece84c08270f9686229dd4a"

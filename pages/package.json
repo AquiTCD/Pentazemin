@@ -14,9 +14,14 @@
   },
   "lint-staged": {
     "gitDir": "../",
-    "*.{js,vue}": ["prettier-eslint --write", "eslint", "git add"]
+    "*.{js,vue}": [
+      "prettier-eslint --write",
+      "eslint",
+      "git add"
+    ]
   },
   "dependencies": {
+    "@nuxtjs/font-awesome": "^1.0.2",
     "nuxt": "^1.0.0-rc11"
   },
   "devDependencies": {

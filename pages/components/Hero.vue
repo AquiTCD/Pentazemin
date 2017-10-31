@@ -3,7 +3,7 @@
     .hero-body
       .container
         h1.title Pentazemin
-        h2.subtitle A task shooting app. keep focus with time and todo management.
+        h2.subtitle An app for task shooting. Helps keeping focus with time and todo management.
 </template>
 
 <script>

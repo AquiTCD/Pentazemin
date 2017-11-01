@@ -2,7 +2,7 @@
   .container
     .columns
       .column
-        .title The concepts
+        .title Concepts
     .columns
       .column
         .subtitle Problems of ordinary ToDo app

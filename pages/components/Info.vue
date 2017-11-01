@@ -1,17 +1,12 @@
 <template lang="pug">
   .container.last-section
     .columns
-      .column.has-text-centered
+      .column
         .title Download
-    .columns
-      .column.has-text-centered
         a.button(href="https://github.com/AquiTCD/Pentazemin/releases/download/v0.1.0/Pentazemin-Setup-0.1.0.exe") Windows
-      .column.has-text-centered
         a.button(href="https://github.com/AquiTCD/Pentazemin/releases/download/v0.1.0/Pentazemin-0.1.0.dmg") Mac
-      .column.has-text-centered
         a.button(href="https://github.com/AquiTCD/Pentazemin/releases/download/v0.1.0/Pentazemin-0.1.0-x86_64.AppImage") Linux
-    .columns
-      .column.has-text-centered
+      .column
         .title Users Guide
         p In progress...
 </template>

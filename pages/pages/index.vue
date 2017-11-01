@@ -3,6 +3,7 @@
     hero
     //- change-lang
     lead
+    concepts
     features
     usage
     voices
@@ -12,6 +13,7 @@
 <script>
 import Hero from '~/components/Hero.vue'
 import Lead from '~/components/Lead.vue'
+import Concepts from '~/components/Concepts.vue'
 import ChangeLang from '~/components/ChangeLang.vue'
 import Features from '~/components/Features.vue'
 import Usage from '~/components/Usage.vue'
@@ -22,6 +24,7 @@ export default {
   components: {
     Hero,
     Lead,
+    Concepts,
     ChangeLang,
     Features,
     Usage,

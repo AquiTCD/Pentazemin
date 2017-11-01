@@ -3,9 +3,17 @@
     .columns
       .column
         .title One of the best way to shoot your tasks
-        p Pentazemin is not just a task management app. It is also a kind of time management.
-          | At the beggining of a day, just set your all tasks that you want to do.
-          | Then, you just do following Pentazemin with Pomodoro technic.
+        blockquote.message.is-dark
+          .message-body Trying to control mind is the worst solution. Make a system and run it instead.
+        //- p.subtitle
+        p
+          | Pentazemin is not just a ToDo app. This is more like an app for time management.
+          br
+          | There are a lot of ToDo apps and timer apps for Pomodoro Technique as well.
+          br
+          | Pentazemin is the app combined ToDo management with Pomodoro Technique.
+          br
+          | First, set your all tasks to do for the day. Then just follow it, do it, and repeat!
 </template>
 
 <script>

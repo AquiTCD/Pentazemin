@@ -1,0 +1,184 @@
+// ============================================================
+// CAUTION: Some of the mixin require Kouto-Swiss
+// ============================================================
+
+// ============================================================
+// Vertical Rhythm calculate line height feeling nice
+// ------------------------------------------------------------
+// Requirement: $font-size-base
+// follow $unit-size-base when the variable is setted
+// Usage: vertical-rhythm: true
+// set font-size before this function if the selector has own font-size
+// ============================================================
+vertical-rhythm(value)
+  if value == true
+    $unit-size-base ?= $font-size-base * 1.8
+    lh = $unit-size-base
+    lh-calc(lh, $unit-size-base)
+      if @font-size > (lh / 1.5)
+        lh = lh + ($unit-size-base / 2)
+        return lh-calc(lh, $unit-size-base)
+      else
+        return lh
+    line-height: lh-calc(lh, $unit-size-base)
+  else
+    error('expected a `vertical-rhythm: true`, but got ' + val)
+// ============================================================
+// Rhythmical Margin and Padding create margin and padding by vertical ryhthm
+// ------------------------------------------------------------
+// Rhythmical space is used by rythmical margin and padding
+// just calculating proper value of space
+// Requirement: $font-size-base
+// follow $unit-size-base when the variable is setted
+// Usage: rhtymical-margin: 1 0 1 0
+// same position of ordinaly short hand(top right bottom left)
+// ============================================================
+rhythmical-space(value)
+ $unit-size-base ?= $font-size-base * 1.8
+ return $unit-size-base * value
+rhythmical-margin(with-margin-top = 0, with-margin-right = 0, with-margin-bottom = 0, with-margin-left = 0)
+  if with-margin-top > 0
+    margin-top: rhythmical-space(with-margin-top)
+  if with-margin-right > 0
+    margin-right: rhythmical-space(with-margin-right)
+  if with-margin-bottom > 0
+    margin-bottom: rhythmical-space(with-margin-bottom)
+  if with-margin-left > 0
+    margin-left: rhythmical-space(with-margin-left)
+rhythmical-padding(with-padding-top = 0, with-padding-right = 0, with-padding-bottom = 0, with-padding-left = 0)
+  if with-padding-top > 0
+    padding-top: rhythmical-space(with-padding-top)
+  if with-padding-right > 0
+    padding-right: rhythmical-space(with-padding-right)
+  if with-padding-bottom > 0
+    padding-bottom: rhythmical-space(with-padding-bottom)
+  if with-padding-left > 0
+    padding-left: rhythmical-space(with-padding-left)
+// ============================================================
+//  Check like Debugger
+// ============================================================
+//  Usage: just include
+// ------------------------------------------------------------
+check()
+  background-color: rgba(255, 0, 0, 0.2)
+// ============================================================
+//  Line Marker, to make decoration like a maker under the text
+// ============================================================
+// Usage: line-marker: true <color>
+// Use colorcode when 2nd argument has
+// Use $amount-base when setted global(33% if not)
+// ------------------------------------------------------------
+line-marker(value, marker-color = $bg-color-emphasis)
+  $amount-base ?= 33%
+  thickness = $amount-base * 2
+  if value == true
+    padding-left: .125em
+    padding-right: .125em
+    margin-left: .125em
+    margin-right: .125em
+    background-image: linear-gradient(transparent thickness, marker-color thickness)
+  else
+    error('expected a `link-maker: true`, but got ' + value)
+// ============================================================
+// Link variation, to make link setting like visited, hover, etc
+// ============================================================
+// Usage:include link-variation: <color> <boolean>
+// Use color when 1st argument has, default is followed color property
+// fix color and no decoration when 2nd argument is true
+// Use $amount-base when setted global(33% if not)
+// ------------------------------------------------------------
+// link-variation(link-color = @color, color-fix = false)
+//   $amount-base ?= 33%
+//   a
+//     color: link-color
+//     text-decoration: none
+//     border-bottom: 1px solid transparent
+//     &:visited
+//       if color-fix
+//         color: link-color
+//       else
+//         color: shade(link-color, $amount-base)
+//       font-weight: normal
+//     &:hover, &:focus
+//       border-bottom: 1px solid
+//       text-decoration: none
+//     &:active
+//       if color-fix
+//         color: invert(link-color)
+//       else
+//         color: complement(link-color)
+
+// link-fix()
+//   a, a:visited, a:hover, a:focus, a:active
+//     color: @color
+//     text-decoration: none
+//     border: 0
+//     outline: 0
+
+// ============================================================
+// Text-outline, add bold outline for text, it is like Fuchidori in Japanese
+// ============================================================
+// Usage: text-outline(outline-color)
+// ------------------------------------------------------------
+text-outline(outline-color, amount = 1)
+  if outline-color is a 'rgba'
+    if amount = 1
+      text-shadow: outline-color 1px 1px 0, outline-color -1px -1px 0, outline-color -1px 1px 0, outline-color 1px -1px 0, outline-color 0 1px 0, outline-color 0 -1px 0, outline-color -1px 0 0, outline-color 1px 0 0
+    else if amount = 2
+      text-shadow: outline-color 2px 0,  outline-color -2px 0, outline-color 0 -2px, outline-color 0 2px, outline-color 2px 2px , outline-color -2px 2px, outline-color 2px -2px, outline-color -2px -2px, outline-color 1px 2px,  outline-color -1px 2px, outline-color 1px -2px, outline-color -1px -2px, outline-color 2px 1px,  outline-color -2px 1px, outline-color 2px -1px, outline-color -2px -1px
+    else
+      error('expected a `text-outline: outline-color, amount`, but got invalid amount, must be 1 or 2')
+  else
+    error('expected a `text-outline: outline-color`, but got invalid color or not defined')
+// ============================================================
+// full-width: contents in container be full width of view
+// ============================================================
+// Usage: full-width: true
+// ------------------------------------------------------------
+full-width(value)
+  if value == true
+    margin-left: calc(((100vw - 100%) / 2) * -1)
+    margin-right: calc(((100vw - 100%) / 2) * -1)
+    padding-left: calc((100vw - 100%) / 2)
+    padding-right: calc((100vw - 100%) / 2)
+  else
+    error('expected a `full-width: true`, but got ' + value)
+
+// ============================================================
+// z-depth: add shodow of z-depth from material design
+// ============================================================
+// Usage: z-depth: <integer>(must be 1..6)
+// ------------------------------------------------------------
+z-depth(value)
+  if value == 0
+    box-shadow: none
+  else if value == 1
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+  else if value == 2
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+  else if value == 3
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+  else if value == 4
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
+  else if value == 5
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)
+  else if value == 6
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.3), 0 20px 14px rgba(0, 0, 0, 0.22)
+  else
+    error('renge of ' + z-depth + ' must be 0..6 , but got ' + value)
+
+// ============================================================
+// font-smoothing: font-smoothing for webkit and mozilla
+// ============================================================
+// Usage: font-smoothing: antialiased
+// ------------------------------------------------------------
+font-smoothing(smoothing = auto)
+  -webkit-font-smoothing: smoothing
+  if smoothing == antialiased
+    -moz-osx-font-smoothing: grayscale
+  else if smoothing == subpixel-antialiased
+    -moz-osx-font-smoothing: auto
+  else if smoothing == none
+    -moz-osx-font-smoothing: none
+  else
+    error('property of font-smoothing must be antialiased, subpixel-antialiased or none, but got ' + smoothing)

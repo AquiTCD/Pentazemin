@@ -1,0 +1,47 @@
+// ============================================================
+// Kouto Swiss settings *Do NOT touch*
+// ============================================================
+// ks-vendor-prefixes       = recommended
+// ks-support-media-queries = true
+// ============================================================
+// default config  *should NOT touch*
+// ============================================================
+@import '_fonts'
+$font-size-root         ?= 62.5%
+// $black-base             ?= $mdc-grey.b900
+$amount-base            ?= 33%
+// $white-base             ?= $mdc-grey.b50
+// $bg-color-base          ?= tint($mdc-amber.b50, $amount-base * 2)
+// $bg-object-base         ?= tint($bg-color-base, $amount-base * 2)
+// $font-color-base        ?= shade($mdc-brown.b900, $amount-base)
+// $grey-base              ?= mix($black-base, $white-base, 50%)
+// $color-base             ?= $mdc-red.a700
+// $bg-color-emphasis      ?= tint($color-base, round($amount-base * 2.5))
+$alpha-density          ?= 0.62
+$ratio-base             ?= 1.4
+$font-size-base         ?= 1.5rem
+$unit-size-base         ?= $font-size-base * 1.8
+$letter-spacing-base    ?= 0.038em
+$font-weight-base       ?= normal
+$font-family-sans-serif ?= 'Noto Sans', 'Avenir Next', 'Open Sans', 'Helvetica Neue',  Helvetica, Roboto, YakuHanJP, NotoSansJP-fixed, YuGothic-fixed, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif
+$font-family-serif      ?= 'Noto Serif', 'Times New Roman', 'Roboto Slab', Garamond, YakuHanJP, NotoSerifJP-fixed, YuMincho-fixed, 'Hiragino Mincho ProN', serif
+$font-family-monospace  ?= 'Source Code Pro', Inconsolate, 'Source Han Code JP', Myrica, CodeM, Ricty, Menlo, 'Dejavu Sans Mono', 'Ubuntu Mono', Consolas,  monospace
+$font-family-fantasy    ?= 'Montserrat', 'AvenirNext-Heavy', 'Arial Black', fantasy
+$font-family-logo       ?= 'Montserrat Subrayada', 'Montserrat', 'AvenirNext-Heavy', 'Arial Black', fantasy
+$font-family-base       ?= $font-family-sans-serif
+// ============================================================
+// Font size Caliculation from base setting *Do NOT have to set*
+// ============================================================
+$ratio-base-half   = ((($ratio-base - 1) / 2 ) + 1)
+$font-size-root-pc = $font-size-root * $ratio-base-half
+$font-size-x-large = $font-size-base * $ratio-base * $ratio-base
+$font-size-large   = $font-size-base * $ratio-base
+$font-size-small   = $font-size-base / $ratio-base-half
+$font-size-x-small = $font-size-base / $ratio-base
+// ============================================================
+// Display size for Responsive as a mobile first
+// ============================================================
+// media-small   = only screen, max-width 599px  // 0-599 SmartPhone
+// media-medium  = only screen, min-width 600px  // 600-959 Tablet
+// media-larger  = only screen, min-width 960px  // 960-1280 Laptop PC
+// media-largest = only screen, min-width 1280px // 1280- Desktop PC

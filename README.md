@@ -1,41 +1,66 @@
 [English](https://github.com/AquiTCD/pentazemin/blob/master/README.md)/[日本語](https://github.com/AquiTCD/pentazemin/blob/master/README_ja.md)
+
 # Pentazemin
-An app for supporting concentration on your tasks. Inspired by Pomodoro technic and TaskChute.
+An app for task shooting. Helps your concentration and keeping focus to do your tasks.  
+A kind of Task management app based on Pomodoro Technique.
 
-TaskChute is a great system, but sometime it is hard to decide estimate time, and feel not good making evry sigle of little task.  
-That's why it is combined Pomodoro technic.  
-A duration of the shortest term should be 25 minutes. It makes easier to decide estimate time for each tasks. And also the timer system helps your concentration.  
-So, once you make a plan for a day in Pentazemin, just shoot your tasks following it.
-
+## Concept of Pentazemin
 > Trying to control mind is the worst solution. Make a system and run it instead.
 
-## Overview
-### Basic to use
-At start at a day, enter your tasks to do for this day with Pomodoro technic.  
-A group of tasks called 'Mission' in this system.  
-The max pomodoros is 4 in a mission, because long break comes each 4 break in Pomodoro, and if you want to make more than 5 pomodoros in a mission which means too big, need to crush as smaller tasks.
+Pentazemin is not just a ToDo app. This is more like an app for time management.  
+There are a lot of ToDo apps and timer apps for Pomodoro Technique as well.  
+Pentazemin is the app combined ToDo management with Pomodoro Technique.
 
-When finish a task(pomodoro), notifier will be shown. It comes from system notification, or from app original.  
-The original notification is inpired by Vitamine-R, it is like dimmer on full-screen.  
-Then start break time immidiately. Also when finish a break, start next task immidiately as well.
-Most of task management require user action when finish.  
-That is bother your concentration, and gives you an opotunity to be out of focus.
+First, set your all tasks to do for the day. Then just follow it, do it, and repeat!
 
-### for users
+### A shortest term is fixed 25 minuts
+Easy to estimate each tasks. Even if A task is big, just think like 'How many Pomodoros need to do this task?'.  
+Easy to recognize unclear tasks. If the count of Pomodoros are too many for one task, which means the tasks should be crushed smaller some tasks.
 
-### Roadmap / todo
+### Starts next task automaticaly without any control
+If the app need any touching to control when move to next task, it make you easy to lose your concentration and pace. That is the reason why starts timer automatically not to disturb.
+
+### Indicates progress and the time to finish
+To know the time to finish all tasks, it gives you motivation. And also it is useful when you set tasks to make a balance of quantity.
+
+## Refefences
+### Introduction
++ Pentazemin - Introduction (English)
++ ~~Pentazemin - Introduction (日本語)~~(in Progress)
+
+### Users Guide
+In progress
+
+### Others
+Recommend to know about Pomodoro Technique.
+
++ [The Pomodoro Technique](https://cirillocompany.de/pages/pomodoro-technique/)(English)
++ [Google/ポモドーロ・テクニック](https://www.google.co.jp/search?q=ポモドーロ+テクニック)(日本語)
+
+## The reason of named 'Pentazemin'
+The name of Pentazemin comes from *[Metal gear solid](http://www.konami.jp/mgs_portal/jp/)* series(video game). Pentazemin is a support item which is a kind of anti-anxiety drug, it afect aiming to be stable when shoot enemies in the game.  
+People are easy to lose focus from what to do when doing tasks. Pentazemin helps to keep focus and to reduce oppotunity of losing it.  
+And also, There are 2 more reasons.  
+Pentazemin is strongly inspired by 2 apps, the first is [TaskChute](https://cyblog.biz/pro/taskchute2/). The imagination of Pentazemin is a word playing like Task Shooting. Then second is [Vitamin-R](http://www.publicspace.net/Vitamin-R/) which is a functional timer app for macOS. This is the reason of name like a drug.
+
+## For Developpers
+### Roadmap and ToDo (not ordinaly)
 + [x] Indicate current taks with pie chart
+  + [ ] replace a better way instead of d3
 + [x] tagging
+  - [ ] replace a better way instead of vue-multiselect
 + [x] extra mission(like lanch-break, meeting, etc. fixed duration task
-+ [ ] test / bug fix / refactor
-+ [ ] introduction for users
++ [x] test / bug fix / refactor (minimum)
++ [ ] introductions
+  + [ ] update readme
   + [ ] github page
+  + [ ] users guide
 + [ ] i18n
-  + [ ] Inside of App
+  + [ ] App
   + [ ] introduction
-+ [ ] Add tools
-  - [ ] instant timer
-  - [ ] support math with PERT
++ [ ] enhance planning
+  - [ ] add 'pending' status for pomodoro
+  - [ ] add 'routine' status for pomodoro
 + [ ] enhance notification
   + [ ] customizable
   + [ ] add more types
@@ -43,13 +68,17 @@ That is bother your concentration, and gives you an opotunity to be out of focus
 + [ ] enhance archiving analyze
   + [ ] sortable
   + [ ] paging
-  + [ ] insert separater by day
-  + [ ] notes for a day
+  + [x] insert separater by day
+  + [x] notes for a day
 + [ ] enhance preferences
-  + [ ] hot-key
+  + [ ] hot-key customization
 + [ ] API for making connection with other apps
++ [ ] basic E2E testing
++ [ ] advanced E2E testing
++ [ ] basic store unit testing
++ [ ] advanced unit testing
 
-## Technologies in Use
+### Technologies in Use
 + Electron
 + Vue.js
   - HTML
@@ -71,14 +100,11 @@ That is bother your concentration, and gives you an opotunity to be out of focus
 + Travis CI
 + GitLocalize
 
-## Naming of 'Pentazemin'
-Pentazemin comes from *Metal gear solid* series. Pentazemin is a support item which is a kind of anti-anxiety drug. In that game, it supports aiming to make focus stable when shooting enemies. Usualy, it is easy to lose focus from what to do when we do some tasks. Pentazemin helps to keep focus and to reduce oppotunity of losing it.  
-And also, Pentazemin is strongly inspired by TaskChute and Vitamin-R(which is timer app for pomodoro and etc.). This is the reason of name like a drug, and word play like TaskShoot.
-
-## License
+### License
 MIT
+
 - - -
-## Build Setup
+### Build Setup
 
 ``` bash
 # install dependencies
@@ -93,11 +119,12 @@ npm run build
 # run unit & end-to-end tests
 npm test
 
-
 # lint all JS/Vue component files in `src/`
 npm run lint
 
 ```
+You can use Yarn instead of NPM.  
+See `package.json` more deteal.
 
 ---
 

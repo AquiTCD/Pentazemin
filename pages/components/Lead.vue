@@ -1,11 +1,10 @@
 <template lang="pug">
-  .container
+  .container.content
     .columns
       .column
         img(src="~/assets/images/main.png")
-        .title One of the best way to shoot your tasks
-        blockquote.message.is-dark
-          .message-body Trying to control mind is the worst solution. Make a system and run it instead.
+        h2.title One of the best way to shoot your tasks
+        blockquote.has-text-weight-bold Trying to control mind is the worst solution. Make a system and run it instead.
         //- p.subtitle
         p
           | Pentazemin is not just a ToDo app. This is more like an app for time management.

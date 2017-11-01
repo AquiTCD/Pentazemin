@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container.last-section
+  .container.last-section.content
     .columns
       .column
         .title Download

@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container
+  .container.content
     .columns
       .column
         .title Users Voice

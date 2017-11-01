@@ -37,29 +37,6 @@ Recommend to know about Pomodoro Technique.
 + [The Pomodoro Technique](https://cirillocompany.de/pages/pomodoro-technique/)(English)
 + [Google/ポモドーロ・テクニック](https://www.google.co.jp/search?q=ポモドーロ+テクニック)(日本語)
 
-<!-- ### Problems of ordinary ToDo app
-1. Hard to estimate, because size of each tasks is not constant
-2. Easy to postpone tasks you do not want to do
-3. Not clear the progress and the time to finish
-
-### Problems of ordinary Pomodoro timer app
-1. Need to control something every time of Pomodoro finished
-2. Not strong enough to keep concentration
-3. Not fanctional ennough for potential of Pomodoro Technique
-
-
-<!-- ## Overview
-### Basic to use
-At start at a day, enter your tasks to do for this day with Pomodoro technic.  
-A group of tasks called 'Mission' in this system.  
-The max pomodoros is 4 in a mission, because long break comes each 4 break in Pomodoro, and if you want to make more than 5 pomodoros in a mission which means too big, need to crush as smaller tasks.
-
-When finish a task(pomodoro), notifier will be shown. It comes from system notification, or from app original.  
-The original notification is inpired by Vitamine-R, it is like dimmer on full-screen.  
-Then start break time immidiately. Also when finish a break, start next task immidiately as well.
-Most of task management require user action when finish.  
-That is bother your concentration, and gives you an opotunity to be out of focus. -->
-
 ## The reason of named 'Pentazemin'
 The name of Pentazemin comes from *[Metal gear solid](http://www.konami.jp/mgs_portal/jp/)* series(video game). Pentazemin is a support item which is a kind of anti-anxiety drug, it afect aiming to be stable when shoot enemies in the game.  
 People are easy to lose focus from what to do when doing tasks. Pentazemin helps to keep focus and to reduce oppotunity of losing it.  

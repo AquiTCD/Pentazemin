@@ -2,8 +2,8 @@
   nav.navbar(role="navigation" aria-label="main navigation")
     .navbar-menu
       .navbar-brand
-        a.navbar-item(href="https://aquitcd.github.io/pentazemin/") Pentazemin
-      a.navbar-item Users Guide
+        a.navbar-item.logo(href="https://aquitcd.github.io/pentazemin/") Pentazemin
+      //- a.navbar-item Users Guide
       .navbar-end
         .navbar-item
           .field.is-grouped
@@ -29,5 +29,7 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-
+@import '../css/variables'
+.logo
+  font-family: $font-family-logo
 </style>

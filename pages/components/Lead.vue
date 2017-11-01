@@ -2,6 +2,7 @@
   .container
     .columns
       .column
+        img(src="~/assets/images/main.png")
         .title One of the best way to shoot your tasks
         blockquote.message.is-dark
           .message-body Trying to control mind is the worst solution. Make a system and run it instead.

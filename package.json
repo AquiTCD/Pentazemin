@@ -2,7 +2,8 @@
   "name": "Pentazemin",
   "version": "0.1.0",
   "author": "Aqui Tsuchida <aqui.tcd+dev@gmail.com>",
-  "description": "The Pomodoro technique based task management app. Helps your aiming for to do.",
+  "description":
+    "The Pomodoro technique based task management app. Helps your aiming for to do.",
   "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
@@ -12,16 +13,21 @@
     "build:web": "cross-env BUILD_TARGET=web node .electron-vue/build.js",
     "dev": "node .electron-vue/dev-runner.js",
     "e2e": "npm run pack && mocha test/e2e",
-    "lint": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter src test",
-    "lint:fix": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter --fix src test",
+    "lint":
+      "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter src test",
+    "lint:fix":
+      "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter --fix src test",
     "pack": "npm run pack:main && npm run pack:renderer",
-    "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
-    "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
+    "pack:main":
+      "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
+    "pack:renderer":
+      "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
     "test": "npm run unit && npm run e2e",
     "unit": "karma start test/unit/karma.conf.js",
     "unit:watch": "karma start --no-single-run test/unit/karma.conf.js",
     "postinstall": "npm run lint:fix",
     "generate": "npm run generate --prefix ./pages",
+    "deploy": "npm run deploy --prefix ./pages",
     "nuxt": "npm run dev --prefix ./pages",
     "precommit": "lint-staged"
   },
@@ -34,9 +40,7 @@
     "directories": {
       "output": "build"
     },
-    "files": [
-      "dist/electron/**/*"
-    ],
+    "files": ["dist/electron/**/*"],
     "dmg": {
       "contents": [
         {

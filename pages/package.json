@@ -9,16 +9,13 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "lint-staged"
   },
   "lint-staged": {
     "gitDir": "../",
-    "*.{js,vue}": [
-      "prettier-eslint --write",
-      "eslint",
-      "git add"
-    ]
+    "*.{js,vue}": ["prettier-eslint --write", "eslint", "git add"]
   },
   "dependencies": {
     "@nuxtjs/font-awesome": "^1.0.2",

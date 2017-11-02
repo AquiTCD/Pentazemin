@@ -14,6 +14,11 @@ export default {
     Navbar,
     GlobalFooter,
   },
+  methods: {
+    path(url) {
+      return this.$i18n.locale === 'en' ? url : '/' + this.$i18n.locale + url
+    },
+  },
 }
 </script>
 

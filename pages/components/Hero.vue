@@ -4,7 +4,7 @@
       .container
         .columns
           .column.mainTitle
-            h1.title.logo Pentazemin
+            h1.title.logo {{ $t('globals.appName') }}
             h2.subtitle An app for task shooting. Helps keeping focus with time and todo management.
           .column.mainLogo.has-text-right
             img(src="~/assets/images/icon.png")

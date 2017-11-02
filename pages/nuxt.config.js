@@ -29,14 +29,19 @@ module.exports = {
     ** Run ESLint on save
     */
     extend(config, ctx) {
+      const rules = config.module.rules
       if (ctx.dev && ctx.isClient) {
-        config.module.rules.push({
+        rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
         })
       }
+      rules.push({
+        test: /\.ya?ml$/,
+        loader: ['json-loader', 'yaml-loader'],
+      })
     },
   },
   plugins: ['~/plugins/buefy', '~/plugins/i18n'],

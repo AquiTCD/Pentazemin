@@ -8,8 +8,8 @@ export default ({ app, store }) => {
     locale: store.state.locale,
     fallbackLocale: 'en',
     messages: {
-      en: require('~/locales/en.json'),
-      ja: require('~/locales/ja.json'),
+      en: require('~/locales/en.yml'),
+      ja: require('~/locales/ja.yml'),
     },
   })
 }

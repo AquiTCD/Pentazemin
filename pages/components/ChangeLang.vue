@@ -1,8 +1,8 @@
 <template lang="pug">
   .container.has-text-right
-    p select your language
-    .button English
-    .button Japanese
+    p {{ $t('changeLang.title') }}
+    .button {{ $t('changeLang.en') }}
+    .button {{ $t('changeLang.ja') }}
 </template>
 
 <script>

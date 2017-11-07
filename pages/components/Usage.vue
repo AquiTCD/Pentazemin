@@ -2,46 +2,36 @@
   .container.content
     .columns
       .column
-        .title How to use
+        .title {{ $t('usage.title') }}
     .columns
       .column
         .box
-          .title Step 1
+          .title {{ $t('usage.step1.title') }}
           img(src="~/assets/images/step1.png")
-          .subtitle.has-text-weight-bold Create Missions
-          p In Pentazemin, Task is named 'Mission',
-          | Pomodoro mean a durration of minimum term.
-          | A Mission has a pomodoro or more,
-          | just think like 'How many pomodoros does this mission need?'
-          | Then, set your all tasks that you want to do this day.
+          .subtitle.has-text-weight-bold  {{ $t('usage.step1.subtitle') }}
+          p  {{ $t('usage.step1.body') }}
       .column
         .box
-          .title Step 2
+          .title {{ $t('usage.step2.title') }}
           img(src="~/assets/images/step2.png")
-          .subtitle.has-text-weight-bold Change Aiming mode
-          p In Aiming mode, you can see
+          .subtitle.has-text-weight-bold  {{ $t('usage.step2.subtitle') }}
+          p  {{ $t('usage.step2.body.lead') }}
           ul
-            li What are the current mission and the next.
-            li When I finish all my tasks (which meas when can I leave my office).
-            li How many Pomodoros remaining, and you have done.
+            li {{ $t('usage.step2.body.line1') }}
+            li {{ $t('usage.step2.body.line2') }}
+            li {{ $t('usage.step2.body.line3') }}
       .column
         .box
-          .title Step 3
+          .title {{ $t('usage.step3.title') }}
           img(src="~/assets/images/step3.png")
-          .subtitle.has-text-weight-bold Shoot your tasks.
-          p The timer runs automatically.
-          | You just do tasks is inidicated or take a break.
-          | You can finish all your task at the tiem you were imagined,
-          | unless you stop the timer by yourself.
+          .subtitle.has-text-weight-bold  {{ $t('usage.step3.subtitle') }}
+          p  {{ $t('usage.step3.body') }}
       .column
         .box
-          .title Step 4
+          .title {{ $t('usage.step4.title') }}
           img(src="~/assets/images/step4.png")
-          .subtitle.has-text-weight-bold Archive and Analyze
-          p The beggeing of next day,
-          | If you archive, the complete task move from list to analyze mode.
-          | You can check how was the previous day.
-          | Then, back to step 1 to start your new day.
+          .subtitle.has-text-weight-bold  {{ $t('usage.step4.subtitle') }}
+          p  {{ $t('usage.step4.body') }}
 </template>
 
 <script>

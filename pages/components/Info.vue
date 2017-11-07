@@ -2,13 +2,13 @@
   .container.last-section.content
     .columns
       .column
-        .title Download
-        a.button(href="https://github.com/AquiTCD/Pentazemin/releases/download/v0.1.0/Pentazemin-Setup-0.1.0.exe") Windows
-        a.button(href="https://github.com/AquiTCD/Pentazemin/releases/download/v0.1.0/Pentazemin-0.1.0.dmg") Mac
-        a.button(href="https://github.com/AquiTCD/Pentazemin/releases/download/v0.1.0/Pentazemin-0.1.0-x86_64.AppImage") Linux
+        .title {{ $t('info.title') }}
+        a.button(href="https://github.com/AquiTCD/Pentazemin/releases/download/v0.1.0/Pentazemin-Setup-0.1.0.exe") {{ $t('info.windows') }}
+        a.button(href="https://github.com/AquiTCD/Pentazemin/releases/download/v0.1.0/Pentazemin-0.1.0.dmg") {{ $t('info.mac') }}
+        a.button(href="https://github.com/AquiTCD/Pentazemin/releases/download/v0.1.0/Pentazemin-0.1.0-x86_64.AppImage") {{ $t('info.linux') }}
       .column
-        .title Users Guide
-        p In progress...
+        .title {{ $t('info.usersguide.title') }}
+        p {{ $t('info.usersguide.link') }}
 </template>
 
 <script>

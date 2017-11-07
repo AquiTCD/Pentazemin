@@ -2,22 +2,22 @@
   .container.content
     .columns
       .column
-        .title Users Voice
+        .title {{ $t('voices.title') }}
     .columns
       .column
         blockquote
-          p.subtitle This is the what I always wanted
-          p Aqui Tsuchida
+          p.subtitle {{ $t('voices.voice1.original') }}
+          p {{ $t('voices.voice1.username') }}
       .column
         blockquote
-          p.subtitle ただ目の前のタスクをこなすだけで時間どおりの時間に終わるなんて！
-          p (I can finish all, I just do tasks in front of me.)
-          p Aqui Tsuchida
+          p.subtitle {{ $t('voices.voice2.original') }}
+          p ({{ $t('voices.voice2.translation') }})
+          p {{ $t('voices.voice2.username') }}
       .column
         blockquote
-          p.subtitle Es como mi amigo para trabajo.
-          p (This is my friend for work.)
-          p Aqui Tsuchida
+          p.subtitle {{ $t('voices.voice3.original') }}
+          p ({{ $t('voices.voice3.translation') }})
+          p {{ $t('voices.voice3.username') }}
 </template>
 
 <script>

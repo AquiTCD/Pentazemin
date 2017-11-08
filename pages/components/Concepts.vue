@@ -25,17 +25,17 @@
             .subtitle.has-text-weight-bold {{ $t('concepts.point1.title') }}
               br
               span {{ $t('concepts.point1.subtitle') }}
-            p {{ $t('concepts.point1.body') }}
+            p.body {{ $t('concepts.point1.body') }}
           .column
             .subtitle.has-text-weight-bold {{ $t('concepts.point2.title') }}
               br
               span {{ $t('concepts.point2.subtitle') }}
-            p {{ $t('concepts.point2.body') }}
+            p.body {{ $t('concepts.point2.body') }}
           .column
             .subtitle.has-text-weight-bold {{ $t('concepts.point3.title') }}
               br
               span {{ $t('concepts.point3.subtitle') }}
-            p {{ $t('concepts.point3.body') }}
+            p.body {{ $t('concepts.point3.body') }}
 </template>
 
 <script>
@@ -43,5 +43,6 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-
+  .body
+    white-space: pre-wrap
 </style>

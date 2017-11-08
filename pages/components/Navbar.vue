@@ -31,9 +31,9 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-@import '../css/variables'
-.logo
-  font-family: $font-family-logo
-.icon
-  margin-right: 0.5em
+  @import '../css/variables'
+  .logo
+    font-family: $font-family-logo
+  .icon
+    margin-right: 0.5em
 </style>

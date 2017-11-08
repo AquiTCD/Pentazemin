@@ -1,6 +1,8 @@
 globals:
-  appName: 'Pentazemin'
-  description: 'An app for task shooting. Helps keeping focus with time and todo management.'
+  appName: Pentazemin
+  description: |-
+    An app for task shooting.
+    Helps keeping focus with time and todo management.
 navbar:
   buttons:
     github: GitHub
@@ -11,9 +13,13 @@ changeLang:
   en: English
   ja: 日本語
 lead:
-  title: 'One of the best way to shoot your tasks'
+  title: One of the best way to shoot your tasks
   maxim: Trying to control mind is the worst solution. Make a system and run it instead.
-  body: "Pentazemin is not just a ToDo app. This is more like an app for time management.\nThere are a lot of ToDo apps and timer apps for Pomodoro Technique as well.\nPentazemin is the app combined ToDo management with Pomodoro Technique.\nFirst, set your all tasks to do for the day. Then just follow it, do it, and repeat!"
+  body: |-
+    Pentazemin is not just a ToDo app. This is more like an app for time management.
+    There are a lot of ToDo apps and timer apps for Pomodoro Technique as well.
+    Pentazemin is the app combined ToDo management with Pomodoro Technique.
+    First, set your all tasks to do for the day. Then just follow it, do it, and repeat!
 concepts:
   title: Concepts
   todoProblem:
@@ -29,35 +35,46 @@ concepts:
   point1:
     title: Point 1.
     subtitle: A shortest term is fixed 25 minuts
-    body: "Easy to estimate each tasks. Even if A task is big, just think like 'How many Pomodoroed to do this task?'\nEasy to recognize unclear tasks. If the count of Pomodoros are too many for one task, which means the tasks should be crushed smaller some tasks."
+    body: |-
+      Easy to estimate each tasks. Even if A task is big, just think like 'How many Pomodoroed to do this task?'
+      Easy to recognize unclear tasks. If the count of Pomodoros are too many for one task, which means the tasks should be crushed smaller some tasks.
   point2:
     title: Point 2.
     subtitle: Starts next task automaticaly without any control
-    body: "If the app need any touching to control when move to next task, it make you easy to lose your concentration and pace. That is the reason why starts timer automatically not to disturb."
+    body: |-
+      If the app need any touching to control when move to next task, it make you easy to lose your concentration and pace. That is the reason why starts timer automatically not to disturb.
   point3:
     title: Point 3.
     subtitle: Indicates progress and the time to finish
-    body: "To know the time to finish all tasks, it gives you motivation. And also it is useful when you set tasks to make a balance of quantity."
+    body: |-
+      To know the time to finish all tasks, it gives you motivation. And also it is useful when you set tasks to make a balance of quantity.
 features:
-  title: 'Features'
+  title: Features
   feature1:
     subtitle: Time Management in Menubar
-    body: "It gives you stable focus to shoot your tasks. A term is 25 minutes (as default), then you just do 1 by 1 with your concentration."
+    body: |-
+      It gives you stable focus to shoot your tasks. A term is 25 minutes (as default), then you just do 1 by 1 with your concentration.
   feature2:
     subtitle: Extra mission
-    body: "Sometime need to do task can not be schema of pomodoro. You can add a task as an Extra mission. Possible to decide minutes as you like. Useful for meeings, lunch break, and so on."
+    body: |-
+      Sometime need to do task can not be schema of pomodoro. You can add a task as an Extra mission. Possible to decide minutes as you like. Useful for meeings, lunch break, and so on.
   feature3:
     subtitle: Aiming only one target
-    body: "Once you start to do your tasks, Too much information disturb your concentration. Aiming mode of Pentazemin display only current task and next task. And also you can see the time of finish all."
+    body: |-
+      Once you start to do your tasks, Too much information disturb your concentration.
+      Aiming mode of Pentazemin display only current task and next task. And also you can see the time of finish all.
   feature4:
     subtitle: Archiving for analyze
-    body: "When you archive your tasks done, you can see them in Analyze mode. Then you know like what you have done at previous day, and how is the balance of your tasks."
+    body: |-
+      When you archive your tasks done, you can see them in Analyze mode. Then you know like what you have done at previous day, and how is the balance of your tasks.
 usage:
   title: How to use
   step1:
     title: Step 1
     subtitle: Create Missions
-    body: "In Pentazemin, Task is named 'Mission', Pomodoro mean a durration of minimum term. A Mission has a pomodoro or more, just think like 'How many pomodoros does this mission need?' Then, set your all tasks that you want to do this day."
+    body: |-
+      In Pentazemin, Task is named 'Mission', Pomodoro mean a duration of minimum term.
+      A Mission has a pomodoro or more, just think like 'How many pomodoros does this mission need?' Then, set your all tasks that you want to do this day.
   step2:
     title: Step 2
     subtitle: Change Aiming mode
@@ -69,16 +86,20 @@ usage:
   step3:
     title: Step 3
     subtitle: Shoot your tasks
-    body: "The timer runs automatically. You just do tasks is inidicated or take a break. You can finish all your task at the tiem you were imagined, unless you stop the timer by yourself."
+    body: |-
+      The timer runs automatically. You just do tasks is inidicated or take a break.
+      You can finish all your task at the tiem you were imagined, unless you stop the timer by yourself.
   step4:
     title: Step 4
     subtitle: Archive and Analyze
-    body: "The beggeing of next day,If you archive, the complete task move from list to analyze mode.You can check how was the previous day.Then, back to step 1 to start your new day."
+    body: |-
+      The beggeing of next day,If you archive, the complete task move from list to analyze mode.
+      You can check how was the previous day.Then, back to step 1 to start your new day.
 voices:
   title: Users Voice
   voice1:
     original: This is the what I always wanted!
-    translation: ''
+    translation: ""
     username: Aqui Tsuchida
   voice2:
     original: ただ目の前のタスクをこなすだけで時間どおりの時間に終わるなんて！

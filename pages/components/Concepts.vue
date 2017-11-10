@@ -2,45 +2,40 @@
   .container.content
     .columns
       .column
-        .title Concepts
+        .title {{ $t('concepts.title') }}
     .message.is-warning
       .message-body
         .columns
-            .column.content
-              .subtitle.has-text-weight-bold Problems of ordinary ToDo app
-              ol
-                li Hard to estimate, because size of each tasks is not constant
-                li Easy to postpone tasks you do not want to do
-                li Not clear the progress and the time to finish
-            .column.content
-              .subtitle.has-text-weight-bold Problems of ordinary Pomodoro timer app
-              ol
-                li Need to control something every time of Pomodoro finished
-                li Not strong enough to keep concentration
-                li Not fanctional ennough for potential of Pomodoro Technique
+          .column.content
+            .subtitle.has-text-weight-bold {{ $t('concepts.todoProblem.title') }}
+            ol
+              li {{ $t('concepts.todoProblem.line1') }}
+              li {{ $t('concepts.todoProblem.line2') }}
+              li {{ $t('concepts.todoProblem.line3') }}
+          .column.content
+            .subtitle.has-text-weight-bold {{ $t('concepts.pomodoroProblem.title') }}
+            ol
+              li {{ $t('concepts.pomodoroProblem.line1') }}
+              li {{ $t('concepts.pomodoroProblem.line2') }}
+              li {{ $t('concepts.pomodoroProblem.line3') }}
     .message.is-success
       .message-body
         .columns
           .column
-            .subtitle.has-text-weight-bold Point.1
+            .subtitle.has-text-weight-bold {{ $t('concepts.point1.title') }}
               br
-              | A shortest term is fixed 25 minuts
-            p
-              | Easy to estimate each tasks. Even if A task is big, just think like 'How many Pomodoros need to do this task?'.
-              br
-              | Easy to recognize unclear tasks. If the count of Pomodoros are too many for one task, which means the tasks should be crushed smaller some tasks.
+              span {{ $t('concepts.point1.subtitle') }}
+            p.body {{ $t('concepts.point1.body') }}
           .column
-            .subtitle.has-text-weight-bold Point.2
+            .subtitle.has-text-weight-bold {{ $t('concepts.point2.title') }}
               br
-              | Starts next task automaticaly without any control
-            p
-              | If the app need any touching to control when move to next task, it make you easy to lose your concentration and pace. That is the reason why starts timer automatically not to disturb.
+              span {{ $t('concepts.point2.subtitle') }}
+            p.body {{ $t('concepts.point2.body') }}
           .column
-            .subtitle.has-text-weight-bold Point.3
+            .subtitle.has-text-weight-bold {{ $t('concepts.point3.title') }}
               br
-              | Indicates progress and the time to finish
-            p
-              | To know the time to finish all tasks, it gives you motivation. And also it is useful when you set tasks to make a balance of quantity.
+              span {{ $t('concepts.point3.subtitle') }}
+            p.body {{ $t('concepts.point3.body') }}
 </template>
 
 <script>
@@ -48,5 +43,6 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-
+  .body
+    white-space: pre-wrap
 </style>

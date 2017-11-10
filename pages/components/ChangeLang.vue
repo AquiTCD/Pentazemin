@@ -1,8 +1,11 @@
 <template lang="pug">
-  .container.has-text-right
-    p select your language
-    .button English
-    .button Japanese
+  .content
+    //- p {{ $t('changeLang.title') }}
+    .field.is-grouped
+      .control
+        a.button(href="./") {{ $t('changeLang.en') }}
+      .control
+        a.button(href="./ja/" disabled) {{ $t('changeLang.ja') }}
 </template>
 
 <script>
@@ -10,5 +13,4 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-
 </style>

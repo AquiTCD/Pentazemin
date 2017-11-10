@@ -19,33 +19,37 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
-  /*
-  ** Plugins configuration
-  */
-  plugins: ['~/plugins/buefy'],
   modules: ['@nuxtjs/bulma', '@nuxtjs/font-awesome'],
   /*
   ** Build configuration
   */
   build: {
+    vendor: ['vue-i18n'],
     /*
     ** Run ESLint on save
     */
     extend(config, ctx) {
+      const rules = config.module.rules
       if (ctx.dev && ctx.isClient) {
-        config.module.rules.push({
+        rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
         })
       }
+      rules.push({
+        test: /\.ya?ml$/,
+        loader: ['json-loader', 'yaml-loader'],
+      })
     },
   },
-  // generate: {
-  //   dir: '../docs',
-  // },
+  plugins: ['~/plugins/buefy', '~/plugins/i18n'],
   router: {
+    middleware: 'i18n',
     base: '/Pentazemin/',
+  },
+  generate: {
+    routes: ['/', '/ja'],
   },
 }

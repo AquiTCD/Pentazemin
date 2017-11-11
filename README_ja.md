@@ -1,100 +1,79 @@
 [English](https://github.com/AquiTCD/pentazemin/blob/master/README.md)/[日本語](https://github.com/AquiTCD/pentazemin/blob/master/README_ja.md)
 
 # Pentazemin
+Pentazeminはタスク消化を支援するためのアプリです。今やるべきことへフォーカスし集中することを助けるためにポモドーロテクニックをベースにしたタスク管理アプリの1つです。
 
-タスクシュートとポモドーロテクニックに影響を受けたToDoマネジメントアプリ 。
+## Pentazeminのコンセプト
+> 気分をコントロールしようと試みるのは最悪の解決法だ。その変わりにシステムを作って運用するべきである。
 
-タスクシュートは素晴しいシステムながらも、小さなタスクをいちいち入力することや、タスクに対して見積時間を決めることが大変だ。
+PentazeminはただのToDoアプリではなく、時間管理法に近しいものでもあります。
+ToDoアプリやポモドーロタイマーアプリは既に数多くありますが、Pentazeminはその2つを組み合わせました。
 
-そこにポモドーロテクニックを組み込んだ。
+まず一日の始めに全てのタスクをセットしてください。そうしたらあとはそれにしたがって、タスクをこなし続けるだけです。
 
-タスクの粒度を25分づつで考えて見積りしやすくし、またタイマーを使って集中することをサポートする。
+### 最小の単位を25分に決めました
+時間の見積りを楽にします。もし1つのタスクが大きい場合でも、「このタスクにはいくつポモドーロが必要だろうか？」と考えるだけです。
 
-つまり、まず一日の予定をPentazeminで決めたら、あとはしたがって次々とタスクと休憩を繰り返すシステム。
+見通しが立ってないタスクを認識しやすくなります。もし1つのタスクに対してポモドーロ数が多すぎる場合、それはもっと細かいタスクに砕くべきだという証拠です。
 
-> 気分をコントロールしようと試みるのは最悪の解決法。その変わりにシステムを作って運用すべし。
+### 操作せずとも自動的に次のタスクが開始します
+次のタスクに移るとき、アプリが入力を求める場合、集中を途切れさせてしまいやすくなります。これこそがなぜ邪魔することなく自動的にタイマーがスタートする理由です。
 
-## 概要
+### 終了時間を表示します
+終了時間を確認できることはモチベーションアップにつながります。さらに全体のタスク数のバランスを取るのにも便利です。
 
-### 基本の使い方
+## 参照情報
+### 紹介
++ [Pentazemin - Introduction](https://aquitcd.github.io/Pentazemin/) (English)
++ ~~Pentazemin - 紹介 (日本語)~~(in Progress)
 
-1タスク（ポモドロ）が終わる時に通知がされる。
+### ユーザーズガイド
+準備中です。
 
-これはOSの通知を使うものと、アプリ独自のものがあり、独自のものは全画面を暗くしたりなどVitamin-Rに影響を受けている。
-タスクが終わる時はただちに休憩に入り、休憩が終わる時は同様にただちにタスクに入る。
+### その他
+ポモドーロテクニックの基礎についての理解を推奨します。
 
-多くのタスク管理アプリでは都度入力などが求められるが、これは集中を妨げ、フォーカスが外れる機会を作ってしまう。
++ [The Pomodoro Technique](https://cirillocompany.de/pages/pomodoro-technique/)(English)
++ [Google/ポモドーロ・テクニック](https://www.google.co.jp/search?q=ポモドーロ+テクニック)(日本語)
 
-1タスク（ポモドロ）が終わる時に通知がされる。{br0}
-これはOSの通知を使うものと、アプリ独自のものがあり、独自のものは全画面を暗くしたりなどVitamin-Rに影響を受けている。
-タスクが終わる時はただちに休憩に入り、休憩が終わる時は同様にただちにタスクに入る。{br1}
-多くのタスク管理アプリでは都度入力などが求められるが、これは集中を妨げ、フォーカスが外れる機会を作ってしまう。
+## 'Pentazemin'と名付けられた理由
+Pentazeminという名前はビデオゲームの*[メタルギアソリッド](http://www.konami.jp/mgs_portal/jp/)* シリーズに登場するアイテムからとっています。Pentazeminは抗不安剤のサポートアイテムでゲーム中では敵を撃つときの狙いを安定させる効果があります。
+ふだんタスクをこなすとき、簡単にフォーカスを失なってしまいます。Pentazeminはそのフォーカスを失なってしまう機会を減らす目的で作られました。
+さらに2つの理由があります。Pentazeminは2つのアプリから強い影響を受けています。1つめは[TaskChute](https://cyblog.biz/pro/taskchute2/)で、Pentazeminの名前がある種のシューティングとシュートの言葉遊びから発想しているところです。2つめは [Vitamin-R](http://www.publicspace.net/Vitamin-R/)というmacOS用の機能豊富なタイマーアプリです。これが薬みたいな名前にした理由です。
 
-### for users
+## 開発者向け
+### やること
+[Project](https://github.com/AquiTCD/Pentazemin/projects/1)を見てください。
 
-### Roadmap / todo
+### 使っている技術
++ Electron
++ Vue.js
+  - HTML
+    - Pug
+  - CSS
+    - Buefy
+    - Stylus
+  - JS
+    - Moment.js
+    - vuedraggable
+    - vue-multiselect
++ D3 for graph
++ NeDB for data presistance
++ testing
+  - karma
+  - mocha
+  - power-assert
+  - sinon
++ Travis CI
++ GitLocalize
 
-- [x] Indicate current taks with pie chart
-- [x] tagging
-- [x] extra mission(like lanch-break, meeting, etc. fixed duration task
-- [ ] test / bug fix / refactor
-- [ ] introduction for users
-    - [ ] github page
-- [ ] i18n
-    - [ ] Inside of App
-    - [ ] introduction
-- [ ] Add tools
-    - [ ] instant timer
-    - [ ] support math with PERT
-- [ ] enhance notification
-    - [ ] customizable
-    - [ ] add more types
-    - [ ] with sound
-- [ ] enhance archiving analyze
-    - [ ] sortable
-    - [ ] paging
-    - [ ] insert separater by day
-    - [ ] notes for a day
-- [ ] enhance preferences
-    - [ ] hot-key
-- [ ] API for making connection with other apps
-
-## Technologies in Use
-
-- Electron
-- Vue.js
-    - HTML
-        - Pug
-    - CSS
-        - Buefy
-        - Stylus
-    - JS
-        - Moment.js
-        - vuedraggable
-        - vue-multiselect
-- D3 for graph
-- NeDB for data presistance
-- testing
-    - karma
-    - mocha
-    - power-assert
-    - sinon
-- Travis CI
-- GitLocalize
-
-## 'Pentazemin'という名前の由来
-
-メタルギアソリッドシリーズから。
-
-## License
-
+### ライセンス
 MIT
 
----
+- - -
+### ビルドセットアップ
 
-## Build Setup
-
-```bash
+``` bash
 # install dependencies
 npm install
 
@@ -107,11 +86,12 @@ npm run build
 # run unit & end-to-end tests
 npm test
 
-
 # lint all JS/Vue component files in `src/`
 npm run lint
 
 ```
+NPMの変わりYarnも使えます。
+詳しくは`package.json`を参照してください。
 
 ---
 

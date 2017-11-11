@@ -1,31 +1,31 @@
 [English](https://github.com/AquiTCD/pentazemin/blob/master/README.md)/[日本語](https://github.com/AquiTCD/pentazemin/blob/master/README_ja.md)
 
 # Pentazemin
-An app for task shooting. Helps your concentration and keeping focus to do your tasks.  
+An app for task shooting. Helps your concentration and keeping focus to do your tasks.
 A kind of Task management app based on Pomodoro Technique.
 
 ## Concept of Pentazemin
 > Trying to control mind is the worst solution. Make a system and run it instead.
 
-Pentazemin is not just a ToDo app. This is more like an app for time management.  
-There are a lot of ToDo apps and timer apps for Pomodoro Technique as well.  
+Pentazemin is not just a ToDo app. This is more like an app for time management.
+There are a lot of ToDo apps and timer apps for Pomodoro Technique as well.
 Pentazemin is the app combined ToDo management with Pomodoro Technique.
 
 First, set your all tasks to do for the day. Then just follow it, do it, and repeat!
 
-### A shortest term is fixed 25 minuts
-Easy to estimate each tasks. Even if A task is big, just think like 'How many Pomodoros need to do this task?'.  
+### A shortest term is fixed 25 minutes
+Easy to estimate each tasks. Even if A task is big, just think like 'How many Pomodoros need to do this task?'.
 Easy to recognize unclear tasks. If the count of Pomodoros are too many for one task, which means the tasks should be crushed smaller some tasks.
 
 ### Starts next task automaticaly without any control
-If the app need any touching to control when move to next task, it make you easy to lose your concentration and pace. That is the reason why starts timer automatically not to disturb.
+If the app needs any touching to control when move to next task, it make you easy to lose your concentration and pace. That is the reason why starts timer automatically not to disturb.
 
 ### Indicates progress and the time to finish
 To know the time to finish all tasks, it gives you motivation. And also it is useful when you set tasks to make a balance of quantity.
 
 ## Refefences
 ### Introduction
-+ Pentazemin - Introduction (English)
++ [Pentazemin - Introduction](https://aquitcd.github.io/Pentazemin/) (English)
 + ~~Pentazemin - Introduction (日本語)~~(in Progress)
 
 ### Users Guide
@@ -38,45 +38,14 @@ Recommend to know about Pomodoro Technique.
 + [Google/ポモドーロ・テクニック](https://www.google.co.jp/search?q=ポモドーロ+テクニック)(日本語)
 
 ## The reason of named 'Pentazemin'
-The name of Pentazemin comes from *[Metal gear solid](http://www.konami.jp/mgs_portal/jp/)* series(video game). Pentazemin is a support item which is a kind of anti-anxiety drug, it afect aiming to be stable when shoot enemies in the game.  
-People are easy to lose focus from what to do when doing tasks. Pentazemin helps to keep focus and to reduce oppotunity of losing it.  
-And also, There are 2 more reasons.  
+The name of Pentazemin comes from *[Metal gear solid](http://www.konami.jp/mgs_portal/jp/)* series(video game). Pentazemin is a support item which is a kind of anti-anxiety drug, it afect aiming to be stable when shoot enemies in the game.
+People are easy to lose focus from what to do when doing tasks. Pentazemin helps to keep focus and to reduce oppotunity of losing it.
+And also, There are 2 more reasons.
 Pentazemin is strongly inspired by 2 apps, the first is [TaskChute](https://cyblog.biz/pro/taskchute2/). The imagination of Pentazemin is a word playing like Task Shooting. Then second is [Vitamin-R](http://www.publicspace.net/Vitamin-R/) which is a functional timer app for macOS. This is the reason of name like a drug.
 
 ## For Developpers
-### Roadmap and ToDo (not ordinaly)
-+ [x] Indicate current taks with pie chart
-  + [ ] replace a better way instead of d3
-+ [x] tagging
-  - [ ] replace a better way instead of vue-multiselect
-+ [x] extra mission(like lanch-break, meeting, etc. fixed duration task
-+ [x] test / bug fix / refactor (minimum)
-+ [ ] introductions
-  + [ ] update readme
-  + [ ] github page
-  + [ ] users guide
-+ [ ] i18n
-  + [ ] App
-  + [ ] introduction
-+ [ ] enhance planning
-  - [ ] add 'pending' status for pomodoro
-  - [ ] add 'routine' status for pomodoro
-+ [ ] enhance notification
-  + [ ] customizable
-  + [ ] add more types
-  + [ ] with sound
-+ [ ] enhance archiving analyze
-  + [ ] sortable
-  + [ ] paging
-  + [x] insert separater by day
-  + [x] notes for a day
-+ [ ] enhance preferences
-  + [ ] hot-key customization
-+ [ ] API for making connection with other apps
-+ [ ] basic E2E testing
-+ [ ] advanced E2E testing
-+ [ ] basic store unit testing
-+ [ ] advanced unit testing
+### Todo
+See [Project](https://github.com/AquiTCD/Pentazemin/projects/1)
 
 ### Technologies in Use
 + Electron
@@ -123,7 +92,7 @@ npm test
 npm run lint
 
 ```
-You can use Yarn instead of NPM.  
+You can use Yarn instead of NPM.
 See `package.json` more deteal.
 
 ---

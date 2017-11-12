@@ -24,6 +24,7 @@
   "dependencies": {
     "@nuxtjs/font-awesome": "^1.0.2",
     "nuxt": "^1.0.0-rc11",
+    "push-dir": "^0.4.1",
     "vue-i18n": "^7.3.2",
     "yaml-loader": "^0.5.0"
   },

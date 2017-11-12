@@ -1,126 +1,123 @@
 globals:
   appName: Pentazemin
   description: |-
-    An app for task shooting.
-    Helps keeping focus with time and todo management.
+    Pentazeminは今やるべきことへフォーカスし集中することを助けるためのタスク消化を支援するアプリです。
 navbar:
   buttons:
     github: GitHub
-    twitter: Tweet
-    download: Download
+    twitter: ツイート
+    download: ダウンロード
 changeLang:
   title: select your language
   en: English
   ja: 日本語
 lead:
-  title: One of the best way to shoot your tasks
-  maxim: Trying to control mind is the worst solution. Make a system and run it instead.
+  title: 最も効率的なタスク消化方法のひとつがここに。
+  maxim: 気分をコントロールしようと試みるのは最悪の解決法だ。その変わりにシステムを作って運用するべきである。
   body: |-
-    Pentazemin is not just a ToDo app. This is more like an app for time management.
-    There are a lot of ToDo apps and timer apps for Pomodoro Technique as well.
-    Pentazemin is the app combined ToDo management with Pomodoro Technique.
-    First, set your all tasks to do for the day. Then just follow it, do it, and repeat!
+    PentazeminはただのToDoアプリではなく、時間管理法に近しいものでもあります。
+    ToDoアプリやポモドーロタイマーアプリは既に数多くありますが、Pentazeminはその2つを組み合わせました。
+    まず一日の始めに全てのタスクをセットしてください。そうしたらあとはそれにしたがって、タスクをこなし続けるだけです。
 concepts:
-  title: Concepts
+  title: コンセプト
   todoProblem:
-    title: Problems of ordinary ToDo app
-    line1: Hard to estimate, because size of each tasks is not constant
-    line2: Easy to postpone tasks you do not want to do
-    line3: Not clear the progress and the time to finish
+    title: 従来のToDoアプリの問題
+    line1: タスクの粒度が不揃いなので見積りが難しい
+    line2: やりたくないタスクはすぐに先送りされてしまう
+    line3: 終了時間と経過が不明瞭
   pomodoroProblem:
-    title: Problems of ordinary Pomodoro timer app
-    line1: Need to control something every time of Pomodoro finished
-    line2: Not strong enough to keep concentration
-    line3: Not fanctional ennough for potential of Pomodoro Technique
+    title: 従来のポモドーロタイマーアプリの問題
+    line1: タイマーが終了すると毎回何かしらの入力が求められる
+    line2: 集中力を持続させるためには力不足
+    line3: ポモドーロテクニックの真価を引き出すには機能が不足している
   point1:
     title: Point 1.
-    subtitle: A shortest term is fixed 25 minuts
+    subtitle: 最小の単位を25分に決めました
     body: |-
-      Easy to estimate each tasks. Even if A task is big, just think like 'How many Pomodoroed to do this task?'
-      Easy to recognize unclear tasks. If the count of Pomodoros are too many for one task, which means the tasks should be crushed smaller some tasks.
+      時間の見積りを楽にします。もし1つのタスクが大きい場合でも、「このタスクにはいくつポモドーロが必要だろうか？」と考えるだけです。
+      見通しが立ってないタスクを認識しやすくなります。もし1つのタスクに対してポモドーロ数が多すぎる場合、それはもっと細かいタスクに砕くべきだという証拠です。
   point2:
     title: Point 2.
-    subtitle: Starts next task automaticaly without any control
+    subtitle: 操作せずとも自動的に次のタスクが開始します
     body: |-
-      If the app need any touching to control when move to next task, it make you easy to lose your concentration and pace. That is the reason why starts timer automatically not to disturb.
+      次のタスクに移るとき、アプリが入力を求める場合、集中を途切れさせてしまいやすくなります。これこそがなぜ邪魔することなく自動的にタイマーがスタートする理由です。
   point3:
     title: Point 3.
-    subtitle: Indicates progress and the time to finish
+    subtitle: 終了時間を表示します
     body: |-
-      To know the time to finish all tasks, it gives you motivation. And also it is useful when you set tasks to make a balance of quantity.
+      終了時間を確認できることはモチベーションアップにつながります。さらに全体のタスク数のバランスを取るのにも便利です。
 features:
-  title: Features
+  title: 特徴的な機能
   feature1:
-    subtitle: Time Management in Menubar
+    subtitle: メニューバーから時間管理
     body: |-
-      It gives you stable focus to shoot your tasks. A term is 25 minutes (as default), then you just do 1 by 1 with your concentration.
+      タスク消化中にブレないフォーカスをもたらします。（デフォルトで）25分間の期間、1つづつ集中してタスクをこなすことができます。
   feature2:
-    subtitle: Extra mission
+    subtitle: エクストラミッション
     body: |-
-      Sometime need to do task can not be schema of pomodoro. You can add a task as an Extra mission. Possible to decide minutes as you like. Useful for meeings, lunch break, and so on.
+      ポモドーロの型にはめられないタスクをこなすこともあるでしょう。その場合は好きな時間（分）を設定できるエクストラミッションとして追加できます。たとえば、ミーティングや昼食休憩などに使うことができます。
   feature3:
-    subtitle: Aiming only one target
+    subtitle: 狙いはひとつだけ
     body: |-
-      Once you start to do your tasks, Too much information disturb your concentration.
-      Aiming mode of Pentazemin display only current task and next task. And also you can see the time of finish all.
+      一度スタートした後は多すぎる情報は集中の妨げになります。Pentazeminのエイミングモードは現在のタスクと次のタスクのみを表示します。もちろん全てを終える時間も表示しています。
   feature4:
-    subtitle: Archiving for analyze
+    subtitle: 分析のための保管
     body: |-
-      When you archive your tasks done, you can see them in Analyze mode. Then you know like what you have done at previous day, and how is the balance of your tasks.
+      終了したタスクをアーカイブすれば分析モードで見ることができます。前日に何を終えたのか、タスクのバランス配分はどうだったのか、などを確認できます。
 usage:
-  title: How to use
+  title: 使い方
   step1:
-    title: Step 1
-    subtitle: Create Missions
+    title: ステップ 1
+    subtitle: ミッションの作成
     body: |-
-      In Pentazemin, Task is named 'Mission', Pomodoro mean a duration of minimum term.
-      A Mission has a pomodoro or more, just think like 'How many pomodoros does this mission need?' Then, set your all tasks that you want to do this day.
+      Pentazemiではタスクを「ミッション」と呼んでいます。ポモドーロは1つの最小単位のタスクを意味します。
+      ミッションは1つから複数のポモドーロを持ち、「このミッションを終えるいにはいくつポモドーロが必要か」だけを考えればいいのです。あとは今日一日の全てのタスクを同じように入力してください。
   step2:
-    title: Step 2
-    subtitle: Change Aiming mode
+    title: ステップ 2
+    subtitle: エイミングモードへ切り替え
     body:
-      lead: In Aiming mode, you can see
-      line1: What are the current mission and the next.
-      line2: When I finish all my tasks (which meas when can I leave my office).
-      line3: How many Pomodoros remaining, and you have done.
+      lead: エイミングモードでは、以下を確認できます。
+      line1: 現在のミッションと次のミッション
+      line2: いつ全てのタスクを終えることができるか（これは例えば何時に今日の仕事を終えられるかを意味します)
+      line3: いくつ未消化のポモドーロが残っているか、またいくつ終えたか
   step3:
-    title: Step 3
-    subtitle: Shoot your tasks
+    title: ステップ 3
+    subtitle: タスクを撃つ
     body: |-
-      The timer runs automatically. You just do tasks is inidicated or take a break.
-      You can finish all your task at the tiem you were imagined, unless you stop the timer by yourself.
+      タイマーは自動的に繰り返されますので、ただ表示されているタスクを消化するか休憩すればいいだけです。
+      それだけで思ったような時間どおりに今日の仕事を終えられます。タイマーを止めない限りね。
   step4:
-    title: Step 4
-    subtitle: Archive and Analyze
+    title: ステップ 4
+    subtitle: アーカイブと分析
     body: |-
-      The beggeing of next day,If you archive, the complete task move from list to analyze mode.
-      You can check how was the previous day.Then, back to step 1 to start your new day.
+      一日の始めにアーカイブすれば終了済みのタスクを分析モードに移動できますので、前日はどうだっか確認できます。
+      そうしたらまたステップ1に戻って新しい日を始めてください。
 voices:
-  title: Users Voice
+  title: ユーザーの声
   voice1:
     original: This is the what I always wanted!
-    translation: ""
+    translation: これこそがずっと欲しかったものだ！
     username: Aqui Tsuchida
   voice2:
     original: ただ目の前のタスクをこなすだけで時間どおりの時間に終わるなんて！
-    translation: I can finish all, I just do tasks in front of me.
+    # translation:
     username: Aqui Tsuchida
   voice3:
     original: Es como mi amigo para trabajo.
-    translation: This is my friend for work.
+    translation: これは私の仕事の友です。
     username: Aqui Tsuchida
 info:
-  title: Download
+  title: ダウンロード
   windows: Windows
   mac: macOS
   linux: Linux
   usersguide:
-    title: Users Guide
+    title: ユーザーズガイド
     link: In progress...
 footer:
   ghstar: Star
-  tweet: Tweet
-  fbshare: Share
+  tweet: ツイート
+  fbshare: シェア
   license:
     code: Code licensed under MIT License.
     copyrights: © 2017 Pentazemin

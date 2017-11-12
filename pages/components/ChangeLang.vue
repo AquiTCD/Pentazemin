@@ -5,7 +5,7 @@
       .control
         a.button(href="./") {{ $t('changeLang.en') }}
       .control
-        a.button(href="./ja/" disabled) {{ $t('changeLang.ja') }}
+        a.button(href="./ja/") {{ $t('changeLang.ja') }}
 </template>
 
 <script>

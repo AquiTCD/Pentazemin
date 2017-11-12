@@ -73,7 +73,7 @@ usage:
     title: Step 1
     subtitle: Create Missions
     body: |-
-      In Pentazemin, Task is named 'Mission', Pomodoro mean a duration of minimum term.
+      In Pentazemin, Task is named 'Mission', Pomodoro means a duration of minimum term.
       A Mission has a pomodoro or more, just think like 'How many pomodoros does this mission need?' Then, set your all tasks that you want to do this day.
   step2:
     title: Step 2
@@ -93,7 +93,7 @@ usage:
     title: Step 4
     subtitle: Archive and Analyze
     body: |-
-      The beggeing of next day,If you archive, the complete task move from list to analyze mode.
+      If you archive at the beggeing of next day, the complete tasks move from list to analyze mode.
       You can check how was the previous day.Then, back to step 1 to start your new day.
 voices:
   title: Users Voice

@@ -26,7 +26,7 @@ To know the time to finish all tasks, it gives you motivation. And also it is us
 ## Refefences
 ### Introduction
 + [Pentazemin - Introduction](https://aquitcd.github.io/Pentazemin/) (English)
-+ ~~Pentazemin - Introduction (日本語)~~(in Progress)
++ [Pentazemin - 紹介](https://aquitcd.github.io/Pentazemin/ja/) (日本語)
 
 ### Users Guide
 In progress

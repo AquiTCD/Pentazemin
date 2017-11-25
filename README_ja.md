@@ -25,7 +25,7 @@ ToDoアプリやポモドーロタイマーアプリは既に数多くありま�
 ## 参照情報
 ### 紹介
 + [Pentazemin - Introduction](https://aquitcd.github.io/Pentazemin/) (English)
-+ ~~Pentazemin - 紹介 (日本語)~~(in Progress)
++ [Pentazemin - 紹介](https://aquitcd.github.io/Pentazemin/ja/) (日本語)
 
 ### ユーザーズガイド
 準備中です。

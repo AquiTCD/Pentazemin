@@ -24,7 +24,7 @@ let rendererConfig = {
   devtool: '#cheap-module-eval-source-map',
   entry: {
     renderer: path.join(__dirname, '../src/renderer/main.js'),
-    sub: path.join(__dirname, '../src/renderer/sub.js'),
+    notifier: path.join(__dirname, '../src/renderer/sub.js'),
   },
   externals: [
     ...Object.keys(dependencies || {}).filter(

@@ -64,6 +64,7 @@
       "icon": "static/icons/icon.ico"
     },
     "linux": {
+      "category": "Utility",
       "icon": "static/icons"
     }
   },
